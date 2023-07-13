@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>2º dia da jornada</h1>
+    </header>
+    <section>
+        <p>Qual o seu nome? <input type="text" name="nome" id="txtnome"></p>
+        <p>Quantos anos você tem? <input type="number" name="idade" id="txtidade"> anos</p>
+        <p>Qual linguagem de programação você está estudando? <input type="text" name="lingprog" id="txtling"></p>
+        <p>Você está gostando de estudar essa linguagem? <br> 
+            <input type="radio" name="check" id="txtsim" checked>
+            <label for="txtsim">Sim</label>
+            <input type="radio" name="check" id="txtnao">
+            <label for="txtnao">Não</label>
+        </p>
+        <input type="button" value="Salvar" onclick="salvar()">
+        
+        <div id="res">
+            
+        </div>
+        
+    </section>
+    <footer>
+        <p>Feito por &copy; <a target='_blank' href="https://www.github.com/hallisonfernandes"><i>HallisonFernandes</i></a> para o desafio da Alura</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
