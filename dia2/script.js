@@ -4,7 +4,6 @@ function salvar() {
     let ling = document.querySelector('input#txtling')
     let res = document.querySelector('div#res')
     
-    
     if (nome.value.length == 0 || idade.value.length == 0 || ling.value.length == 0){
         alert('ERRO! Preencha todos os dados!')
     } else {
@@ -16,6 +15,8 @@ function salvar() {
             res.innerHTML += `Ahh que pena que você não gostou de <strong>${ling.value}</strong>... Já tentou aprender outras linguagens?`
         }
     }
-    
-
+    nome.value = ''
+    idade.value = ''
+    ling.value = ''
+    nome.focus()
 }
